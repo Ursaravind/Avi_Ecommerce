@@ -24,7 +24,7 @@ const MyProfile = () => {
         // Fetch user profile if the token is valid
         const fetchUserProfile = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/myprofile", {
+                const response = await axios.get("https://e-commerse-6per.onrender.com/myprofile", {
                     headers: { 'x-token': token }
                 });
                 setUser(response.data);
